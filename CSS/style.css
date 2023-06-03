@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif;
+  }
+  body {
+  
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1f1f47;
+      overflow: hidden;
+     }
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(255,255, 255, .15);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, .37);
+    border: 1px solid rgba(255,255, 255, .18);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  h2{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  
+  
+  .input-box{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+  
+  }
+  
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: 5px;
+    color: #fffdfd2d;
+  
+  }
+  
+  .input-box input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 35px 0 5px;
+  }
+  
+  .input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 57px;
+  
+  }
+  
+  button[type="submit"]{
+    width: 100%;
+    height: 45px;
+    background-color: #fa709a;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    outline: none;
+  
+  }
+  
+  .blob{
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(47, 184, 255, .42) 31.77%, #5c9df1 100%);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73% ;
+    transform: translate(-100px, -50px) rotate(-90deg);
+    transition: 1s cubic-bezier(.07, .8, .16, 1);
+    animation: animteBlob 15s infinite alternate;
+  }
+  
+  .blob:hover{
+    width: 520px;
+    height: 520px;
+    filter: blur(30px);
+    box-shadow:
+        inset 0 0 0 5px rgba(255, 255, 255, .6),
+        inset 100px 100px 0 0 #fa709a,
+        inset 100px 100px 0 0 #784ba8,
+        inset 100px 100px 0 0 #2b86c5,
+         ;
+  }
+  
+  @keyframes animteBlob{
+  
+    30% {
+      transform: translate(100px, -200px ) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32% ;
+    }
+  
+  
+  
+  
+  
+    100% {
+      transform: translate(350px, 80px ) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32% ;
+    }
+  
+  
+  }
+
+.wrapper2{
+    transform: translate(10px, -12rem);
+    width: 90%;
+    background-color: rgba(255,255, 255, .15);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, .37);
+    border: 1px solid rgba(255,255, 255, .18);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+  
+  }
+
+
+  .table{
+    width: 100%;
+  }
+
+.add-button{
+    position: absolute;
+    transform: translate(-39rem, -270px);
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: #5c9df1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+  }
+
+  button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+
+  button .icon{
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 57px;
+  }
+
+
+
+
+
+  
+  
+  
+  
